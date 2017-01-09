@@ -1,5 +1,5 @@
 {
-  "name": "BCE",
+  "name": "bce-app-base",
   "author": "bce@baidu.com",
   "homepage": "https://cloud.baidu.com/",
   "private": true,
@@ -49,7 +49,6 @@
       "version": "",
       "locator": "ios"
     }
-  ],
-  "description": "BCE Mobile App"
+  ]
 }
 
