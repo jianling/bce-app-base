@@ -8,7 +8,8 @@ module.exports = {
             '@angular/platform-browser',
             '@angular/platform-browser-dynamic',
             'ionic-angular',
-            'bce-native'
+            'bce-native',
+            'echarts'
         ]
     },
     output: {

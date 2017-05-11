@@ -41,7 +41,8 @@ module.exports = {
     'node_modules/ionic-angular/themes',
     'node_modules/ionic-angular/components',
     'node_modules/ionic-angular/platform',
-    'node_modules/ionicons/dist/scss'
+    'node_modules/ionicons/dist/scss',
+    'node_modules/bce-iconfont/scss'
   ]
 
 };

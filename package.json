@@ -5,13 +5,15 @@
   "private": true,
   "scripts": {
     "ionic:build": "ionic-app-scripts build --dev --sourceMap source-map",
+    "ionic:buildPro": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
     "build-ionic-js": "webpack --config ./config/dll.webpack.config.js",
     "build-ionic-css": "node ./scripts/ionic-sass.js"
   },
   "config": {
     "ionic_webpack": "./config/webpack.config.js",
-    "ionic_sass": "./config/sass.config.js"
+    "ionic_sass": "./config/sass.config.js",
+    "ionic_copy": "./config/copy.config.js"
   },
   "dependencies": {
     "@angular/common": "2.1.1",
@@ -25,23 +27,55 @@
     "@angular/platform-server": "2.1.1",
     "@ionic/storage": "1.1.6",
     "ionic-angular": "2.0.0-rc.3",
-    "bce-native": "1.2.0",
+    "bce-native": "1.6.0",
     "ionicons": "3.0.0",
-    "bce-iconfont": "1.0.0",
+    "bce-iconfont": "1.2.0",
     "rxjs": "5.0.0-beta.12",
-    "zone.js": "0.6.26"
+    "zone.js": "0.6.26",
+    "underscore": "1.8.3",
+    "monent": "2.17.1"
   },
   "devDependencies": {
     "@ionic/app-scripts": "0.0.45",
     "typescript": "2.0.6"
   },
   "cordovaPlugins": [
-    "cordova-plugin-whitelist",
+    "cordova-hot-code-push-plugin",
+    "cordova-plugin-app-version",
+    {
+      "locator": "https://github.com/jianling/cordova-plugin-bdpush",
+      "id": "cordova-plugin-http"
+    },
+    "cordova-plugin-compat",
     "cordova-plugin-console",
-    "cordova-plugin-statusbar",
     "cordova-plugin-device",
+    "cordova-plugin-file",
+    {
+      "locator": "https://github.com/jianling/cordova-HTTP",
+      "id": "cordova-plugin-http"
+    },
+    {
+      "locator": "https://github.com/jianling/cordova-plugin-inappbrowser",
+      "id": "cordova-plugin-http"
+    },
+    {
+      "locator": "https://github.com/jianling/cordova-plugin-mtj",
+      "id": "cordova-plugin-http"
+    },
+    {
+      "locator": "https://github.com/jianling/cordova-plugin-multiview",
+      "id": "cordova-plugin-http"
+    },
+    "cordova-plugin-nativestorage",
+    {
+      "locator": "https://github.com/jianling/cordova-plugin-payment.git",
+      "id": "cordova-plugin-http"
+    },
     "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "cordova-plugin-statusbar",
+    "cordova-plugin-whitelist",
+    "ionic-plugin-keyboard",
+    "call-number"
   ],
   "cordovaPlatforms": [
     "ios",
@@ -50,6 +84,7 @@
       "version": "",
       "locator": "ios"
     }
-  ]
+  ],
+  "description": "BCE Mobile App"
 }
 
