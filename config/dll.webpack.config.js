@@ -9,7 +9,9 @@ module.exports = {
             '@angular/platform-browser-dynamic',
             'ionic-angular',
             'bce-native',
-            'echarts'
+            'echarts',
+            'moment',
+            'underscore'
         ]
     },
     output: {
