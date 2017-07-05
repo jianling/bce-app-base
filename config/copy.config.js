@@ -1,6 +1,4 @@
 
-// https://www.npmjs.com/package/fs-extra
-
 module.exports = {
   include: [
     {
@@ -10,14 +8,6 @@ module.exports = {
     {
       src: '{{SRC}}/index.html',
       dest: '{{BUILD}}/index.html'
-    },
-    {
-      src: '{{SRC}}/manifest.json',
-      dest: '{{WWW}}/manifest.json'
-    },
-    {
-      src: '{{SRC}}/service-worker.js',
-      dest: '{{WWW}}/service-worker.js'
     },
     {
       src: 'node_modules/ionic-angular/polyfills/polyfills.js',
