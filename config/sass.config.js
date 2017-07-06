@@ -40,7 +40,6 @@ module.exports = {
    */
   includePaths: [
     'node_modules/ionic-angular/themes'
-    // 'node_modules/ionicons/dist/scss'
   ],
 
   /**
@@ -59,7 +58,8 @@ module.exports = {
    * patterns, then the file will be excluded.
    */
   excludeFiles: [
-    /*  /\.(wp).(scss)$/i  */
+    /lib\.scss/,
+    /common\.scss/
   ],
 
   /**
@@ -68,7 +68,7 @@ module.exports = {
    * to be imported so their values override default variables.
    */
   variableSassFiles: [
-    '{{SRC}}/theme/variables.scss'
+    '{{SRC}}/common/theme/variables.scss'
   ],
 
   /**

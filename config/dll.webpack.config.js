@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        ionic: [
+        lib: [
             '@angular/compiler',
             '@angular/core',
             '@angular/platform-browser',

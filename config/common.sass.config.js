@@ -1,9 +1,9 @@
 
 module.exports = {
 
-  file: './src/common.scss',
+  file: './src/common/common.scss',
 
-  outFile: './www/lib/ionic.css',
+  outFile: './www/lib/lib.css',
 
   /**
    * sourceMap: If source map should be built or not.

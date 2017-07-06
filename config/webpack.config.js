@@ -80,7 +80,7 @@ module.exports = {
   plugins: getPlugins().concat([
     new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require('../www/lib/ionic-manifest.json')
+        manifest: require('../www/lib/lib-manifest.json')
     })
   ]),
 
